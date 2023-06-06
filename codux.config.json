@@ -1,6 +1,7 @@
 {
   "$schema": "https://wixplosives.github.io/codux-config-schema/codux.config.schema.json",
   "boardGlobalSetup": "./src/_codux/boards-global-setup.ts",
+  "boardsPath": "src/components",
   "componentsDiscovery": {
     "include": ["src/**"],
     "exclude": ["src/_codux/component-templates/**"]

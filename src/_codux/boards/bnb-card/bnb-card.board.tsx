@@ -1,0 +1,28 @@
+import { createBoard } from '@wixc3/react-board'
+import { BnbCard } from '../../../components/bnb-card/bnb-card'
+
+export default createBoard({
+  name: 'BnbCard',
+  Board: () => (
+    <BnbCard
+      images={[
+        'https://images.unsplash.com/photo-1575789959844-bbdf1cc5e339?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ym5ifGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60',
+        'https://images.unsplash.com/photo-1601918774946-25832a4be0d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Ym5ifGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60',
+        'https://images.unsplash.com/photo-1632178702478-a3a628c2886d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJuYnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60',
+        'https://images.unsplash.com/photo-1606788635679-6a4e2b9a7b07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJuYnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60',
+        'https://images.unsplash.com/photo-1600786288830-9f5d4bf1d516?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Ym5ifGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60',
+      ]}
+      title={[
+        'Fantastic Flat',
+        'Cozy Cabin',
+        'Lakeside Leisure',
+        'Elegant Estate',
+        'Stone Serenity',
+      ]}
+      price={[699, 549, 799, 849, 649]}
+    />
+  ),
+  environmentProps: {
+    canvasWidth: 400,
+  },
+})
